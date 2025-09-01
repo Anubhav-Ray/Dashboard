@@ -191,7 +191,18 @@ const api = {
         console.log('Updating team members:', members);
     }
 };
+function updateValue(){
+let totalProjects=document.querySelector('.total-projects')
+let endedProjects=document.querySelector('.ended-projects')
+let runningProjects=document.querySelector('.running-projects')
+let pendingProjects=document.querySelector('.pending-projects')
+totalProjects.textContent=dashboardData.stats.totalProjects
+endedProjects.textContent=dashboardData.stats.endedProjects
+runningProjects.textContent=dashboardData.stats.runningProjects
+pendingProjects.textContent=dashboardData.stats.pendingProjects
+console.log(totalProjects);
 
+}
 // Initialize everything
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize timer
@@ -202,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize event listeners
     initializeEventListeners();
+    updateValue()
 });
 
 // Expose API for external use

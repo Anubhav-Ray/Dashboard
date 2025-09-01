@@ -19,7 +19,7 @@
 
         /* Sidebar */
         .sidebar {
-            width: 280px;
+            width: 220px;
             background: rgba(219, 212, 212, 0.406);
             padding: 40px 0;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -98,7 +98,7 @@
         /* Main Content */
         .main-content {
             flex: 1;
-            margin-left: 280px;
+            margin-left: 230px;
             padding: 0;
         }
 
@@ -282,6 +282,8 @@
             padding: 32px 28px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.2s ease;
+            max-width: 35vw;
+            max-height: 45vh;
             position: relative;
         }
 
@@ -290,7 +292,7 @@
         }
 
         .stat-card.primary {
-            background: linear-gradient(135deg, #22C55E, #16A34A);
+            background: linear-gradient(135deg, #3d954f, #37754d);
             color: white;
         }
 
@@ -310,7 +312,8 @@
         .stat-arrow {
             width: 40px;
             height: 40px;
-            background: rgba(255, 255, 255, 0.15);
+            background: white;
+            color: black;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -321,11 +324,12 @@
         .stat-card:not(.primary) .stat-arrow {
             background: #f9fafb;
             color: #6B7280;
+            border-color:black;
         }
 
         .stat-value {
             font-size: 54px;
-            font-weight: 700;
+            font-weight: 500;
             margin-bottom: 12px;
             line-height: 1;
         }
@@ -337,7 +341,39 @@
             gap: 8px;
             opacity: 0.8;
         }
+        .increased-value{
+            width: 44px;
+            height:25px;
+            padding-left: 2px;
+            border: 2px solid rgb(77, 161, 56);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
 
+
+        }
+        .increased-month{
+            color: #37754d;
+        }
+      .increased-month-main{
+        color: #a5de35;;
+      }
+   
+      .greenish-yellow-glow {
+        width: 10px;
+        text-shadow:
+        0 0 6px rgba(240, 248, 0, 0.5),   /* Inner, slightly stronger glow */
+        0 0 18px rgba(240, 248, 0, 0.3);  /* Reduced blur, even lower opacity for outer soft effect */
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent; /* Adjust size */
+    border-right: 8px solid transparent; /* Adjust size */
+    border-bottom: 8px solid #a5de35; /* Adjust size and color */
+  }
         /* Content Grid */
         .content-grid {
             display: grid;
@@ -710,16 +746,18 @@
 
         /* Mobile App Widget */
         .mobile-app-widget {
-            background-image: url('./Images/mobile-backgrounf.jpg');
+            background-image: url('./Images/mobile-background.jpg');
             background-size: cover;
             background-repeat: no-repeatx;
             border-radius: 15px;
             margin-top: 8rem;
             margin-left: 1rem;
+            margin-right: 1rem;
             padding: 0.8rem 2rem 2rem 0.8rem;
             padding-left: 0.8rem;
             color: white;
             max-width: 16vw;
+            max-height: 48vh;
           
         }
     
