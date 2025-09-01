@@ -387,8 +387,13 @@
             border-radius: 20px;
             padding: 30px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            /* height:50vh; */
         }
-
+.project-content-section{
+    background: white;
+    width: 40vw;
+    height: 30vh ;
+}
         .section-title {
             font-size: 24px;
             font-weight: 600;
@@ -408,7 +413,7 @@
 
         .chart-bar {
             width: 50px;
-            border-radius: 25px 25px 0 0;
+            border-radius: 25px 25px 25px 25px;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
